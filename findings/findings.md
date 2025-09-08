@@ -1,0 +1,19 @@
+Abbreviations: 
+- A11y: Accesibility 
+- i8n: internationalization
+- i10n: localization 
+
+HTML CSS: 
+- Class: for CSS styling, similar to Jersey # 
+- id: unique like passport number 
+- 'sections' are like chapters in one 'main' 
+
+What is Angular: Angular is a TypeScript-based open-source web application framework maintained by Google. It follows a component-based architecture and uses declarative templates, dependency injection, and a powerful CLI for scaffolding and development. Angular applications are built around modules, services, and components, with a focus on building single-page applications that are highly structured and maintainable. It uses RxJS for reactive programming and zones for change detection, allowing complex UI updates without direct DOM manipulation. Angular emphasizes strong typing and compile-time checking, which makes it suitable for enterprise-scale applications. It comes with built-in tools for routing, forms, HTTP communication, and unit testing. Its steep learning curve is offset by the completeness of the framework.
+
+
+What is Flutter: Flutter is an open-source UI toolkit developed by Google for building natively compiled applications from a single codebase. It allows developers to target iOS, Android, web, desktop, and embedded platforms using the Dart programming language. Flutter provides a reactive, declarative programming model and uses a custom rendering engine (Skia) that paints every pixel on the screen. Widgets are the building blocks in Flutter and everything from layout to styling is widget-based. It does not rely on native platform components, which allows for consistent UI and performance across platforms. Flutter supports hot reload, making it efficient for development iteration. It is commonly used for mobile apps with custom UI and high performance requirements.
+
+What is AstroJS: AstroJS is a modern static site generator that builds fast, lightweight web applications using a component-driven approach. It supports multiple frameworks including React, Vue, Svelte, and Solid, allowing developers to use their preferred frontend technologies within a single project. Astro emphasizes partial hydration, which means it ships zero or minimal JavaScript by default, only hydrating interactive components on demand. Its file-based routing and Markdown integration make it especially well-suited for content-heavy sites like blogs and documentation portals. Astro compiles components into static HTML at build time, optimizing performance and reducing time-to-interactive. It supports server-side rendering and edge rendering out of the box. With strong developer ergonomics and fast build times, Astro is designed for speed and scalability.
+
+
+What is Next Js:  Next.js is a React-based full-stack web framework developed by Vercel, designed for building high-performance web applications. It offers features such as server-side rendering (SSR), static site generation (SSG), and incremental static regeneration (ISR), giving developers flexible options for optimizing performance and SEO. Next.js uses file-based routing and supports dynamic routes, middleware, and API routes natively, enabling full backend functionality without separate servers. It integrates tightly with the React ecosystem and supports TypeScript, image optimization, and built-in CSS and Sass support. The framework enables hybrid applications where pages can be rendered on the server, statically generated, or rendered on the client as needed. Next.js is well-suited for e-commerce, dashboards, content platforms, and any React project that demands scalability and speed. Its robust developer tooling and production-grade features make it one of the most popular choices in modern web development.
