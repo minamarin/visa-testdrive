@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accesible Login / Tiny App</title>
+    <link rel="stylesheet" href="./node_modules/@visa/nova-styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/@visa/nova-styles/themes/visa-light/index.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header class="site-header" role="banner">
+      <h1 class="v-typography-display-1">Tiny App: Login</h1>
+    </header>
+
+    <main id="main" tabindex="-1">
+      <section aria-labelledby="login-title" class="v-content-card">
+        <div class="v-content-card-body v-flex v-flex-col v-gap-4">
+          <h2 id="login-title" class="v-typography-headline-1">
+            Sign in to your account
+          </h2>
+          <!-- Error summary (filled by JS on submit) -->
+          <div
+            id="error-summary"
+            class="error-summary"
+            role="alert"
+            aria-live="assertive"
+            hidden
+            tabindex="-1"
+          ></div>
+
+          <!-- Status for success messages -->
+          <p id="status" class="sr-only" aria-live="polite"></p>
+
+          <form id="login-form" novalidate>
+            <div class="field">
+              <label for="email" class="v-typography-subtitle-1"
+                >Email address</label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                autocomplete="username"
+                required
+                aria-describedby="email-hint email-error"
+                inputmode="email"
+              />
+              <div id="email-hint" class="hint">
+                Use your work email (name@example.com).
+              </div>
+              <div id="email-error" class="error" hidden></div>
+            </div>
+
+            <div class="field">
+              <label for="password" class="v-typography-subtitle-1"
+                >Password</label
+              >
+              <div class="password-row">
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  autocomplete="current-password"
+                  minlength="8"
+                  required
+                  aria-describedby="password-hint password-error"
+                />
+                <div id="password-hint" class="hint">At least 8 characters.</div>
+                <button
+                  type="button"
+                  id="toggle-password"
+                  class="v-button v-button-tertiary"
+                  aria-controls="password"
+                  aria-pressed="false"
+                >
+                  Show Password
+                </button>
+              </div>
+              
+              <div id="password-error" class="error" hidden></div>
+            </div>
+
+            <div class="v-flex v-align-items-center v-gap-2">
+              <label class="v-label v-typography-label-large">
+                <input type="checkbox" id="remember" name="remember" />
+                <span>Remember me</span>
+              </label>
+              <a class="link" href="#" aria-describedby="fake-note"
+                >Forgot password?</a
+              >
+            </div>
+            <p id="fake-note" class="sr-only">
+              Demo only — this link is not active.
+            </p>
+
+            <button type="submit" class="v-button">Sign in</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

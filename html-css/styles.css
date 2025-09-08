@@ -1,0 +1,72 @@
+:root {
+  --app-max-w: 720px;
+
+  /* Focus ring color – align with Visa blue */
+  --focus-ring: #1434cb;
+  /* Error color – complementary to theme */
+  --error: #e5484d;
+}
+
+/* Page layout */
+body {
+  margin: 0;
+  min-height: 80dvh;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  background:var(--palette-default-surface-2); /* falls back if Nova vars are absent */
+  color: var(--palette-default-text);
+}
+
+.site-header {
+    text-align: center; 
+}
+
+/* Main content wrapper */
+main {
+  padding: var(--space-6);
+  max-width: var(--app-max-w);
+  margin-inline: auto;
+  display: grid;
+  gap: var(--space-6);
+  outline: none; /* focus handled via :focus-visible */
+}
+
+.field { margin-block-end: var(--space-5); }
+label {
+  display: block;
+  margin-block-end: var(--space-2);
+}
+
+/* Inputs – let Nova provide base look; just size & spacing here */
+input[type="email"]{
+  width: 100%;
+  font-size: 1rem;
+}
+input[type="password"] {
+  width: 100%;
+  font-size: 1rem;
+}
+
+.hint{
+  color: var(--palette-default-active-subtle);
+  font-size: 0.9rem;
+}
+
+/* Focus visibility (keyboard flow) */
+:focus { outline: none; }
+:focus-visible {
+  box-shadow: 0 0 0 3px var(--focus-ring);
+  border-radius: 10px;
+}
+.primary:focus-visible,
+.secondary:focus-visible,
+input:focus-visible,
+a.skip-link:focus-visible {
+  outline: none; /* rely on box-shadow ring above */
+}
+
+/* Optional: responsive card spacing on small screens */
+@media (max-width: 480px) {
+  .card { padding: var(--space-5); }
+}
+
