@@ -15,7 +15,7 @@ cd visa-testdrive
 npm install
 ```
 
-## Built 4 tiny apps:
+## 4 tiny apps:
 - HTML/CSS: Login with semantic markup, validation, focus management.
 - React: Todo with keyboard support, ARIA patterns, unit tests.
 - Angular: Same flow with Angular forms, a11y checks, route guard.
